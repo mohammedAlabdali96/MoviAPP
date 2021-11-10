@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieRama</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header id="header" style="display: flex;">
+        <div class="logo-container">
+            <h1>MovieRama</h1>
+        </div>
+        <div class="search-container">
+            <form id="form">
+                <input type="text" id="search" class="search" placeholder="Search..." />
+            </form>
+        </div>
+        <div class="scan"></div>
+    </header>
+    <main id="main"></main>
+
+    <button onclick="goToTop()" id="toTop"><span class="material-icons arrow-up-icon">arrow_upward</span></button>
+
+    <div id="modalId" class="modal-overlay">
+        <div id="modalContentId" class="modal-content">
+            <!-- <span class="close"><span class="material-icons-outlined">close</span></i></span> -->
+        </div>
+    </div>
+
+    <div id="loading" class="loading">
+        <span>...</span>
+    </div>
+</body>
+
+</html>
