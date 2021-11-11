@@ -537,6 +537,7 @@ figcaption {
     align-items: center;
     justify-content: center;
     flex-grow: 4;
+    flex-wrap: wrap;
 }
 
 .similar-movie {

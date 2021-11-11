@@ -244,17 +244,17 @@ function movieClicked(id, poster) {
 		const videoElement = createElement("div", "details");
 		if (youTubeUrl) {
 			videoElement.innerHTML = `
-				<iframe id="ytplayer" type="text/html" width="900" height="550"	src="${youTubeUrl}"	frameborder="0" allow='autoplay'></iframe>
+				<iframe id="ytplayer" type="text/html" width="400" height="400"	src="${youTubeUrl}"	frameborder="0" allow='autoplay'></iframe>
 			`;
 		} else {
 			videoElement.innerHTML = `
 				<span class="trailer-not-found"> We're sorry, trailer not found :( </span>
-				<video width="900" height="400" controls>
+				<video width="200" height="300" controls>
 					<source src="" type="video/mp4">
 				</video>
 			`;
 		}
-		firstRowElement.append(videoElement);
+		firstRowElement.append(videoElement)
 		modalContent.append(firstRowElement);
 
 		// Display Reviews
