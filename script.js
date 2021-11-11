@@ -233,13 +233,6 @@ function movieClicked(id, poster) {
 
 		const firstRowElement = createElement("div", "top-row")
 
-		// Display Poster
-		const posterElement = createElement("div", "poster-md");
-		posterElement.innerHTML = `
-			<img width="367" src="${poster}" onclick="closeModal()" />
-		`
-		firstRowElement.append(posterElement);
-
 		// Display Trailer
 		const videoElement = createElement("div", "details");
 		if (youTubeUrl) {
